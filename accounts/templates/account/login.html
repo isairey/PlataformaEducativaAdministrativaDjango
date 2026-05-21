@@ -1,0 +1,51 @@
+{% extends "weallcode/_base.html" %}
+{% load static socialaccount %}
+
+{% block page-class %}page-login{% endblock %}
+
+{% block subheader %}
+  {% if messages %}
+    {% include 'weallcode/_messages.html' %}
+  {% endif %}
+
+  <div class="sub-menu">
+    <nav class="grid-container" role="navigation">
+      <ul class="menu">
+        <li><a href="{% url 'weallcode-join-us' %}#volunteer">Volunteer</a></li>
+        <li><a href="{% url 'weallcode-join-us' %}#donate">Donate</a></li>
+        <li><a href="{% url 'weallcode-join-us' %}#sponsorship">Sponsorship</a></li>
+        <li><a href="{% url 'weallcode-join-us' %}#contact">Contact Us</a></li>
+      </ul>
+    </nav>
+  </div>
+{% endblock subheader %}
+
+{% block content %}
+  <main id="main">
+    <div class="padding-vertical-3">
+        <div class="grid-container">
+            <h1 class="title">Login</h1>
+            <div class="grid-x grid-padding-x">
+                <form action="{{ app_path }}" method="post" id="login-form" class="cell medium-6">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <input type="hidden" name="next" value="{{ next }}" />
+                    <button class="button" type="submit">Log in <i class="fas fa-chevron-right margin-left-1"></i>
+                    </button>
+                </form>
+                <div class="cell medium-5 medium-offset-1 padding-top-1">
+                    <a href="{% provider_login_url 'google' %}" class="button secondary">
+                        <i class="margin-right-1 fab fa-google"></i> Sign in with Google <i class="fas fa-chevron-right margin-left-1"></i>
+                    </a>
+                    <a href="{% provider_login_url 'facebook' method='oauth2' %}" class="button secondary">
+                        <i class="margin-right-1 fab fa-facebook"></i> Sign in with Facebook <i class="fas fa-chevron-right margin-left-1"></i>
+                    </a>
+                    <p>Not yet a member? <a href="{% url 'account_signup' %}">Register now</a>!</p>
+                    <p>Forgot your password? <a href="{% url 'account_reset_password' %}">Reset it</a>!</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+  </main>
+{% endblock %}

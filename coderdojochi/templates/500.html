@@ -1,0 +1,41 @@
+{% extends "coderdojochi/_base.html" %}
+
+{% load i18n %}
+
+{% block title %}Website Error | {{ block.super }}{% endblock %}
+{% block meta_facebook_title %}Website Error | {{ block.super }}{% endblock %}
+{% block meta_twitter_title %}Website Error | {{ block.super }}{% endblock %}
+
+{% block meta_description %}Whoops! Something went wrong. We're fixing it quickly!{% endblock %}
+{% block meta_facebook_description %}Whoops! Something went wrong. We're fixing it quickly!{% endblock %}
+{% block meta_twitter_description %}Whoops! Something went wrong. We're fixing it quickly!{% endblock %}
+
+{% comment %} {% block meta_facebook_image %}{% endblock %} {% endcomment %}
+{% comment %} {% block meta_twitter_image %}{% endblock %} {% endcomment %}
+
+{% block body_class %}page-500{% endblock %}
+
+{% block contained_content %}
+<h1 class="title">Oops!</h1>
+<p>Something went wrong on our side. Sorry about that.</p>
+<p>Please press back and try again. If you'd like help, <strong>please contact us via <a href="mailto:hello@weallcode.org">email</a> or <a href="tel:+17738696536">phone</a></strong>. We're here to help you anytime!</p>
+<p><b>Email:</b> <a href="mailto:hello@weallcode.org">hello@weallcode.org</a></p>
+<p><b>Phone:</b> <a href="tel:+17738696536">(773) 869-6536</a></p>
+
+{% if SENTRY_DSN and sentry_event_id %}
+<script
+  src="https://browser.sentry-cdn.com/7.47.0/bundle.tracing.replay.min.js"
+  integrity="sha384-I2g6Fi9zxwCBZKReIiHPmwQl3DEe/r3dcYlzEUEGH9aRlVjejBp04GqXfrlicr7e"
+  crossorigin="anonymous"
+></script>
+
+<script>
+  Sentry.init({
+    dsn: '{{ SENTRY_DSN }}',
+    integrations: [new Sentry.BrowserTracing()],
+  });
+  Sentry.showReportDialog({ eventId: '{{ sentry_event_id }}' });
+</script>
+{% endif %}
+
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends "coderdojochi/_base.html" %}
+
+{% comment %} Need to do title this way since allauth doesn't support django-meta {% endcomment %}
+{% block title %}{% block title_placeholder %}{% endblock %}{{ block.super }}{% endblock %}
+
+{% block subheader %}
+{% if user.is_authenticated %}
+  <div class="sub-menu">
+    <nav class="grid-container" role="navigation">
+      <ul class="menu">
+        <li><a href="{% url 'account_logout' %}">Log Out</a></li>
+      </ul>
+    </nav>
+  </div>
+{% endif %}
+{% endblock subheader %}
+
+{% block contained_content %}
+  {% block content_placeholder %}{% endblock %}
+{% endblock %}

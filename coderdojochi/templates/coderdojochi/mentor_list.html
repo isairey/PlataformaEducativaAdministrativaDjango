@@ -1,0 +1,21 @@
+{% extends "coderdojochi/_base.html" %}
+{% load humanize %}
+
+{% block title %}My Dojo | {{ block.super }}{% endblock %}
+
+{% block body_class %}page-mentors{% endblock %}
+
+{% block contained_content %}
+<h1 class="title">Meet Our Mentors <a href="{% url 'account_signup' %}" class="button">Become a Volunteer</a></h1>
+
+<div class="grid-x mentors">
+    {% for mentor in object_list %}
+    <div class="cell small-4">
+        <a href="{% url 'mentor-detail' mentor.id %}" class="thumbnail">
+            <img src="{{ mentor.get_avatar.thumbnail.url }}" alt="Photo of {{ mentor.full_name }}">
+        </a>
+        <p class="caption text-center"><a href="{% url 'mentor-detail' mentor.id %}">{{ mentor.full_name }}</a></p>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
