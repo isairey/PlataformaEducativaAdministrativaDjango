@@ -1,122 +1,554 @@
-# Custom-build Django application for We All Code
+<div align="center">
 
-We, the community and staff, have been building a custom Django application to handle out many parts of our organization.
+<img width="220" src="https://cdn-icons-png.flaticon.com/512/5968/5968705.png" />
 
-## Initial Setup
+# 🎓 We All Code Platform
 
-1. Fork and clone this repository locally.
-2. Download and install [OrbStack][orbstack] for Mac/Linux or [Docker for Windows][docker-windows].
-3. Copy the `.env.sample` file to `.env`.
+### Plataforma educativa y administrativa desarrollada con Django 🚀
 
-   ```sh
-   cp .env.sample .env
-   ```
+<p align="center">
+  <b>We All Code Platform</b> es una aplicación web personalizada desarrollada con Django para gestionar múltiples áreas organizacionales, incluyendo administración, mentorías, tutores y gestión educativa mediante una arquitectura moderna basada en Docker.
+</p>
 
-4. Run the following to get a random Django secret key.
+<p align="center">
+  <img src="https://img.shields.io/badge/Django-Backend-092E20?style=for-the-badge&logo=django&logoColor=white">
+  <img src="https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge&logo=python&logoColor=white">
+  <img src="https://img.shields.io/badge/Docker-Containers-2496ED?style=for-the-badge&logo=docker&logoColor=white">
+  <img src="https://img.shields.io/badge/PostgreSQL-Database-336791?style=for-the-badge&logo=postgresql&logoColor=white">
+</p>
 
-   ```sh
-   python -c "import secrets; print(secrets.token_urlsafe())"
-   ```
+<p align="center">
+  <a href="#-acerca-del-proyecto">Acerca</a> •
+  <a href="#-características">Características</a> •
+  <a href="#-tecnologías-utilizadas">Tecnologías</a> •
+  <a href="#-instalación">Instalación</a> •
+  <a href="#-arquitectura">Arquitectura</a>
+</p>
 
-5. Enter the output inside the `.env` file for `SECRET_KEY`. Be sure to include the double quotes (`"`) around the key. It'll look like the following `SECRET_KEY="<unique-key-here>"`.
-6. Navigate into the project directory via terminal and run `docker compose up --build`
-7. Load up your browser and go to http://127.0.0.1:8000.
-8. When you are done, you can stop the project via `ctrl+c`
+</div>
 
-### Debugging Accounts
+---
 
-#### Admin
+# 🎓 Acerca del proyecto
+
+**We All Code Platform** es una plataforma web desarrollada con Django diseñada para administrar distintos procesos internos de una organización educativa y tecnológica.
+
+El sistema permite gestionar:
+
+- 👨‍🏫 Mentorías
+- 👨‍👩‍👧 Gestión de guardianes
+- 👨‍💼 Administración interna
+- 📚 Gestión educativa
+- 🔐 Autenticación de usuarios
+- 🐳 Infraestructura Docker
+- ⚡ Desarrollo colaborativo
+
+La plataforma está construida bajo una arquitectura moderna basada en contenedores para facilitar el desarrollo, despliegue y mantenimiento del sistema.
+
+---
+
+# ✨ Características
+
+## 🎓 Gestión educativa
+
+- 👨‍🏫 Administración de mentores
+- 👨‍🎓 Gestión de estudiantes
+- 👨‍👩‍👧 Gestión de guardianes
+- 📚 Organización académica
+- 📊 Panel administrativo
+
+---
+
+## 🔐 Sistema de autenticación
+
+- 🔑 Login seguro
+- 👥 Roles de usuario
+- 🛡️ Control de acceso
+- 🔒 Protección de sesiones
+- ⚡ Autenticación Django
+
+---
+
+## 🐳 Infraestructura moderna
+
+- 🐳 Docker Compose
+- ⚡ Entornos aislados
+- 🔄 Desarrollo simplificado
+- 🚀 Deploy escalable
+- 📦 Contenedores optimizados
+
+---
+
+## 👨‍💻 Desarrollo colaborativo
+
+- 🌿 Flujo Git profesional
+- 🔀 Pull Requests
+- 📋 Control de ramas
+- 🧪 Entorno de pruebas
+- ⚙️ Automatización de desarrollo
+
+---
+
+# 👨‍💻 Módulos del sistema
+
+## 🔐 Authentication Module
+
+Sistema de autenticación y permisos.
+
+### Funcionalidades:
+
+- Login seguro
+- Roles de usuario
+- Gestión de sesiones
+- Protección de rutas
+- Validación de acceso
+
+---
+
+## 👨‍🏫 Mentor Module
+
+Gestión de mentores educativos.
+
+### Funcionalidades:
+
+- Administración de mentores
+- Gestión de perfiles
+- Control de acceso
+- Seguimiento académico
+
+---
+
+## 👨‍👩‍👧 Guardian Module
+
+Gestión de tutores y responsables.
+
+### Funcionalidades:
+
+- Registro de guardianes
+- Asociación de estudiantes
+- Administración de cuentas
+- Gestión de accesos
+
+---
+
+## ⚙️ Admin Module
+
+Panel administrativo principal.
+
+### Funcionalidades:
+
+- Gestión global
+- Administración de usuarios
+- Configuración del sistema
+- Control organizacional
+
+---
+
+# 🛠️ Tecnologías utilizadas
+
+## ⚙️ Backend
+
+<p>
+  <img src="https://skillicons.dev/icons?i=python,django" />
+</p>
+
+- Python 3
+- Django
+- Django ORM
+- Django Authentication
+- REST Architecture
+
+---
+
+## 🐳 DevOps & Infraestructura
+
+<p>
+  <img src="https://skillicons.dev/icons?i=docker" />
+</p>
+
+- Docker
+- Docker Compose
+- Containerized Development
+- Environment Variables
+- Virtualized Services
+
+---
+
+## 🗄️ Base de datos
+
+<p>
+  <img src="https://skillicons.dev/icons?i=postgresql" />
+</p>
+
+- PostgreSQL
+- Django ORM
+- Relational Database
+- Data Management
+
+---
+
+## 🧰 Herramientas
+
+<p>
+  <img src="https://skillicons.dev/icons?i=git,github,vscode,bash" />
+</p>
+
+- Git
+- GitHub
+- VS Code
+- Bash
+- Linux Environment
+
+---
+
+# 📂 Estructura del proyecto
+
+```bash
+we-all-code/
+│
+├── app/
+│   ├── accounts/
+│   ├── mentors/
+│   ├── guardians/
+│   ├── admin/
+│   └── core/
+│
+├── docker/
+│
+├── static/
+│
+├── templates/
+│
+├── .env.sample
+├── docker-compose.yml
+├── manage.py
+├── README.md
+└── requirements.txt
+```
+
+---
+
+# 🏗️ Arquitectura del sistema
+
+## ⚡ Arquitectura general
+
+```text
+Usuario → Django Application → PostgreSQL Database
+                     ↓
+               Docker Containers
+```
+
+---
+
+## 🔄 Flujo de autenticación
+
+```text
+Login → Validación Django → Sesión activa → Acceso autorizado
+```
+
+---
+
+# 📊 Funcionalidades principales
+
+## 👨‍🏫 Gestión educativa
+
+- Administración de mentores
+- Gestión de guardianes
+- Control de usuarios
+- Organización educativa
+
+---
+
+## 🔐 Seguridad
+
+- Autenticación Django
+- Protección de sesiones
+- Roles y permisos
+- Variables de entorno
+- Secret Key segura
+
+---
+
+## 🐳 Docker Development
+
+- Desarrollo en contenedores
+- Configuración rápida
+- Ambientes reproducibles
+- Build automatizado
+
+---
+
+# 🔐 Seguridad del sistema
+
+## 🛡️ Protección integrada
+
+- 🔒 Django Authentication
+- 🔑 SECRET_KEY protegida
+- ⚡ Variables de entorno
+- 🛡️ Docker isolation
+- 🚫 Gestión de permisos
+- 🔐 Protección backend
+
+---
+
+# ⚡ Instalación
+
+## 📋 Requisitos
+
+- Python 3
+- Docker
+- Docker Compose
+- Git
+- VS Code
+
+---
+
+# 🚀 Configuración del proyecto
+
+## 1️⃣ Clonar repositorio
+
+```bash
+git clone https://github.com/WeAllCode/website.git
+```
+
+---
+
+## 2️⃣ Entrar al proyecto
+
+```bash
+cd website
+```
+
+---
+
+## 3️⃣ Crear archivo .env
+
+```bash
+cp .env.sample .env
+```
+
+---
+
+## 4️⃣ Generar SECRET_KEY
+
+```bash
+python -c "import secrets; print(secrets.token_urlsafe())"
+```
+
+Agregar la key al archivo `.env`
+
+```env
+SECRET_KEY="your-secret-key"
+```
+
+---
+
+## 5️⃣ Ejecutar Docker
+
+```bash
+docker compose up --build
+```
+
+---
+
+## 6️⃣ Abrir proyecto
+
+```bash
+http://127.0.0.1:8000
+```
+
+---
+
+# 👤 Usuarios de prueba
+
+## 🔑 Admin
 
 ```txt
 username: admin@sink.sendgrid.net
 password: admin
 ```
 
-#### Mentor
+---
+
+## 👨‍🏫 Mentor
 
 ```txt
 username: mentor@sink.sendgrid.net
 password: mentor
 ```
 
-#### Guardian
+---
+
+## 👨‍👩‍👧 Guardian
 
 ```txt
 username: guardian@sink.sendgrid.net
 password: guardian
 ```
 
-## Continual work
+---
 
-After the initial project setup, you will only need to run `docker compose up --build`.
+# 💻 Comandos útiles
 
-## Useful Information
+## 🐳 Ejecutar contenedor
 
-### Set up main repository as `upstream`
-
-To setup the main respository as `upstream`, you can add a new remote called `upstream`.
-
-```console
-git remote add upstream https://github.com/WeAllCode/website.git
+```bash
+docker compose run --rm app /bin/bash
 ```
 
-### Update local code from `upstream`
+---
 
-To grab the latest code from the main repo (named `upstream`), run the following.
+## 📦 Migraciones
 
-```console
+```bash
+docker compose run --rm app python manage.py makemigrations
+docker compose run --rm app python manage.py migrate
+```
+
+---
+
+## 🧹 Limpiar contenedores
+
+```bash
+docker kill $(docker ps -q)
+docker compose rm -f
+```
+
+---
+
+## 🔄 Reconstruir proyecto
+
+```bash
+docker compose build
+```
+
+---
+
+# 🌿 Flujo de desarrollo
+
+## 🔀 Crear nueva rama
+
+```bash
+git fetch upstream --prune
+git checkout -b feature/nueva-funcionalidad upstream/main
+git push -u origin feature/nueva-funcionalidad
+```
+
+---
+
+## 🔄 Actualizar desde upstream
+
+```bash
 git fetch upstream --prune
 git checkout main
 git merge upstream/main main
 ```
 
-### Creating a new branch
+---
 
-Create a new branch based off of `upstream`'s `main` branch.
+# 📸 Vista previa
 
-```console
-git fetch upstream --prune
-git checkout -b feature/a-good-name upstream/main
-git push -u origin feature/a-good-name
+## 🖥️ Plataforma educativa
+
+<div align="center">
+
+### 🎓 Dashboard administrativo
+![Dashboard](https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200)
+
+### 👨‍🏫 Gestión educativa
+![Education](https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200)
+
+### 🐳 Infraestructura Docker
+![Docker](https://images.unsplash.com/photo-1605745341112-85968b19335b?q=80&w=1200)
+
+</div>
+
+---
+
+# 🧠 Objetivos del proyecto
+
+## 🎯 Aprendizaje y desarrollo
+
+- Arquitectura Django
+- Docker Development
+- Gestión educativa
+- Backend escalable
+- Sistemas multiusuario
+- DevOps moderno
+- Seguridad web
+
+---
+
+# 🚧 Roadmap
+
+## 🔮 Próximas mejoras
+
+- 📱 Aplicación móvil
+- 🌐 API REST completa
+- 📊 Analytics Dashboard
+- ☁️ Cloud deployment
+- 🔔 Sistema de notificaciones
+- 🤖 Automatización educativa
+- 📚 Gestión avanzada académica
+
+---
+
+# 🤝 Contribuciones
+
+Las contribuciones son bienvenidas ❤️
+
+## Cómo contribuir
+
+1. Fork del proyecto
+
+```bash
+git checkout -b feature/nueva-funcionalidad
 ```
 
-### Pull Request
+2. Commit
 
-Pull requests are always welcome. Make sure your pull request does one task only. That is, if it's fixing a bug, the pull request fixes only that bug. If you're adding a feature, make sure the pull request adds that one feature, not multiple at once.
-
-Follow the "Creating a new branch" step above. Be sure to always push to your `origin` remote, not `upstream`.
-
-### Running commands on the docker container
-
-- Running a command on a Docker app in a new container.
-
-```console
-docker compose run --rm app <command>
+```bash
+git commit -m "✨ Nueva funcionalidad"
 ```
 
-Examples:
+3. Push
 
-```console
-docker compose run --rm app /bin/bash
-docker compose run --rm app uv lock
-docker compose run --rm app python manage.py makemigrations
-docker compose run --rm app python manage.py migrate
+```bash
+git push origin feature/nueva-funcionalidad
 ```
 
-- Cleaning up the docker containers:
+4. Pull Request 🚀
 
-```console
-docker kill $(docker ps -q); docker compose rm -f; docker volume rm $(docker volume ls -qf dangling=true);
-```
+---
 
-- Rebuild docker containers after major changes:
+# 👨‍💻 Desarrolladores
 
-```console
-docker compose build
-```
+<div align="center">
 
-[orbstack]: https://orbstack.dev/
-[docker-mac]: https://www.docker.com/docker-mac
-[docker-windows]: https://www.docker.com/docker-windows
-[docker-toolbox]: https://www.docker.com/products/docker-toolbox
-[localhost]: http://localhost/
+## We All Code Community
+
+Plataforma desarrollada por la comunidad We All Code para la gestión educativa y tecnológica 🚀
+
+</div>
+
+---
+
+# 🌟 Apoya el proyecto
+
+⭐ Dale una estrella  
+🍴 Haz fork  
+📢 Comparte el proyecto
+
+---
+
+# 📜 Licencia
+
+Proyecto open source desarrollado para gestión educativa, aprendizaje colaborativo y administración organizacional con Django.
+
+---
+
+<div align="center">
+
+### 🎓 We All Code Platform — educación y tecnología moderna 🚀
+
+</div>
