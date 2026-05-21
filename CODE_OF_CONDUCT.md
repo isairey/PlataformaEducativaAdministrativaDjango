@@ -123,7 +123,7 @@ Este código de conducta aplica en:
 Los comportamientos abusivos o inaceptables pueden ser reportados a:
 
 ```txt
-hello@weallcode.org
+Developer.SR.IRP@gmail.com
 ```
 
 Todos los reportes serán:
