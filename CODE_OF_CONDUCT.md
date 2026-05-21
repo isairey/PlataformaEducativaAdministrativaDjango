@@ -1,76 +1,192 @@
-# Contributor Covenant Code of Conduct
+<div align="center">
 
-## Our Pledge
+<img width="200" src="https://cdn-icons-png.flaticon.com/512/1048/1048953.png" />
 
-In the interest of fostering an open and welcoming environment, we as
-contributors and maintainers pledge to making participation in our project and
-our community a harassment-free experience for everyone, regardless of age, body
-size, disability, ethnicity, sex characteristics, gender identity and expression,
-level of experience, education, socio-economic status, nationality, personal
-appearance, race, religion, or sexual identity and orientation.
+# 🤝 Contributor Covenant
 
-## Our Standards
+### Código de conducta para una comunidad abierta, inclusiva y respetuosa 🌎
 
-Examples of behavior that contributes to creating a positive environment
-include:
+<p align="center">
+  Este proyecto adopta el <b>Contributor Covenant Code of Conduct</b> con el objetivo de crear una comunidad segura, colaborativa y libre de acoso para todos los participantes.
+</p>
 
-* Using welcoming and inclusive language
-* Being respectful of differing viewpoints and experiences
-* Gracefully accepting constructive criticism
-* Focusing on what is best for the community
-* Showing empathy towards other community members
+<p align="center">
+  <img src="https://img.shields.io/badge/Open%20Source-Community-3DA639?style=for-the-badge&logo=opensourceinitiative&logoColor=white">
+  <img src="https://img.shields.io/badge/Code%20of-Conduct-5865F2?style=for-the-badge&logo=github&logoColor=white">
+  <img src="https://img.shields.io/badge/Community-Inclusive-FF6B6B?style=for-the-badge">
+</p>
 
-Examples of unacceptable behavior by participants include:
+<p align="center">
+  <a href="#-nuestro-compromiso">Compromiso</a> •
+  <a href="#-estándares">Estándares</a> •
+  <a href="#-responsabilidades">Responsabilidades</a> •
+  <a href="#-aplicación">Aplicación</a>
+</p>
 
-* The use of sexualized language or imagery and unwelcome sexual attention or
- advances
-* Trolling, insulting/derogatory comments, and personal or political attacks
-* Public or private harassment
-* Publishing others' private information, such as a physical or electronic
- address, without explicit permission
-* Other conduct which could reasonably be considered inappropriate in a
- professional setting
+</div>
 
-## Our Responsibilities
+---
 
-Project maintainers are responsible for clarifying the standards of acceptable
-behavior and are expected to take appropriate and fair corrective action in
-response to any instances of unacceptable behavior.
+# 🤝 Nuestro compromiso
 
-Project maintainers have the right and responsibility to remove, edit, or
-reject comments, commits, code, wiki edits, issues, and other contributions
-that are not aligned to this Code of Conduct, or to ban temporarily or
-permanently any contributor for other behaviors that they deem inappropriate,
-threatening, offensive, or harmful.
+En interés de fomentar un entorno abierto y acogedor, los contribuidores y mantenedores del proyecto se comprometen a hacer de la participación en nuestra comunidad una experiencia libre de acoso para todas las personas.
 
-## Scope
+Esto aplica sin importar:
 
-This Code of Conduct applies both within project spaces and in public spaces
-when an individual is representing the project or its community. Examples of
-representing a project or community include using an official project e-mail
-address, posting via an official social media account, or acting as an appointed
-representative at an online or offline event. Representation of a project may be
-further defined and clarified by project maintainers.
+- Edad
+- Nacionalidad
+- Apariencia física
+- Identidad o expresión de género
+- Nivel de experiencia
+- Religión
+- Discapacidad
+- Orientación sexual
+- Estado socioeconómico
+- Raza o etnia
 
-## Enforcement
+Nuestro objetivo es construir una comunidad basada en el respeto, la colaboración y la inclusión.
 
-Instances of abusive, harassing, or otherwise unacceptable behavior may be
-reported by contacting the project team at hello@weallcode.org. All
-complaints will be reviewed and investigated and will result in a response that
-is deemed necessary and appropriate to the circumstances. The project team is
-obligated to maintain confidentiality with regard to the reporter of an incident.
-Further details of specific enforcement policies may be posted separately.
+---
 
-Project maintainers who do not follow or enforce the Code of Conduct in good
-faith may face temporary or permanent repercussions as determined by other
-members of the project's leadership.
+# ✨ Estándares de comportamiento
 
-## Attribution
+## ✅ Comportamientos positivos
 
-This Code of Conduct is adapted from the [Contributor Covenant][homepage], version 1.4,
-available at https://www.contributor-covenant.org/version/1/4/code-of-conduct.html
+Los siguientes comportamientos ayudan a construir una comunidad saludable:
 
-[homepage]: https://www.contributor-covenant.org
+- 💬 Usar lenguaje inclusivo y amable
+- 🤝 Respetar diferentes opiniones y experiencias
+- 📚 Aceptar críticas constructivas
+- 🌎 Pensar en el bienestar de la comunidad
+- ❤️ Mostrar empatía hacia otros miembros
+- 🧠 Fomentar un ambiente profesional y colaborativo
 
-For answers to common questions about this code of conduct, see
+---
+
+## ❌ Comportamientos inaceptables
+
+Los siguientes comportamientos no serán tolerados:
+
+- 🚫 Lenguaje o imágenes sexualizadas
+- 🚫 Comentarios ofensivos o ataques personales
+- 🚫 Trolling o provocaciones
+- 🚫 Acoso público o privado
+- 🚫 Compartir información privada sin permiso
+- 🚫 Conducta inapropiada o intimidante
+- 🚫 Discriminación de cualquier tipo
+
+---
+
+# 🛡️ Responsabilidades
+
+## 👨‍💻 Responsabilidades de los mantenedores
+
+Los mantenedores del proyecto tienen la responsabilidad de:
+
+- 📋 Definir estándares claros de conducta
+- ⚖️ Aplicar medidas justas y correctivas
+- 🔒 Mantener un entorno seguro
+- 🚫 Remover contenido inapropiado
+- 👥 Proteger a los miembros de la comunidad
+
+---
+
+## ⚠️ Acciones disciplinarias
+
+Los mantenedores podrán:
+
+- Eliminar comentarios ofensivos
+- Rechazar contribuciones inapropiadas
+- Suspender temporalmente usuarios
+- Banear permanentemente contribuidores problemáticos
+
+---
+
+# 🌎 Alcance
+
+Este código de conducta aplica en:
+
+- Repositorios GitHub
+- Pull Requests
+- Issues
+- Chats oficiales
+- Redes sociales del proyecto
+- Eventos online u offline
+- Espacios públicos relacionados con el proyecto
+
+---
+
+# 📢 Aplicación y reportes
+
+## 📩 Reportar incidentes
+
+Los comportamientos abusivos o inaceptables pueden ser reportados a:
+
+```txt
+hello@weallcode.org
+```
+
+Todos los reportes serán:
+
+- 🔒 Confidenciales
+- 📋 Investigados cuidadosamente
+- ⚖️ Evaluados de forma justa
+- 🚨 Atendidos según la gravedad del caso
+
+---
+
+# ⚖️ Política de cumplimiento
+
+Los mantenedores que no hagan cumplir este código de conducta de buena fe podrán enfrentar:
+
+- Advertencias
+- Suspensión temporal
+- Remoción del equipo del proyecto
+
+---
+
+# 📚 Atribución
+
+Este código de conducta está basado en:
+
+## 🤝 Contributor Covenant v1.4
+
+Disponible en:
+
+```txt
+https://www.contributor-covenant.org/version/1/4/code-of-conduct.html
+```
+
+---
+
+# ❓ Preguntas frecuentes
+
+Para más información sobre este código de conducta:
+
+```txt
 https://www.contributor-covenant.org/faq
+```
+
+---
+
+# 🌟 Nuestra comunidad
+
+<div align="center">
+
+### ❤️ Construimos software abierto con respeto, empatía y colaboración
+
+</div>
+
+---
+
+# 📜 Licencia
+
+Este documento está basado en el estándar open source **Contributor Covenant** para fomentar comunidades saludables y colaborativas.
+
+---
+
+<div align="center">
+
+### 🤝 Together we build better communities 🚀
+
+</div>
