@@ -204,7 +204,7 @@ Panel administrativo principal.
 # 📂 Estructura del proyecto
 
 ```bash
-we-all-code/
+PlataformaEducativaAdministrativaDjango/
 │
 ├── app/
 │   ├── accounts/
@@ -308,7 +308,7 @@ Login → Validación Django → Sesión activa → Acceso autorizado
 ## 1️⃣ Clonar repositorio
 
 ```bash
-git clone https://github.com/WeAllCode/website.git
+git clone https://github.com/isairey/PlataformaEducativaAdministrativaDjango.git
 ```
 
 ---
@@ -316,7 +316,7 @@ git clone https://github.com/WeAllCode/website.git
 ## 2️⃣ Entrar al proyecto
 
 ```bash
-cd website
+cd PlataformaEducativaAdministrativaDjango
 ```
 
 ---
@@ -446,24 +446,7 @@ git merge upstream/main main
 
 ---
 
-# 📸 Vista previa
 
-## 🖥️ Plataforma educativa
-
-<div align="center">
-
-### 🎓 Dashboard administrativo
-![Dashboard](https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200)
-
-### 👨‍🏫 Gestión educativa
-![Education](https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200)
-
-### 🐳 Infraestructura Docker
-![Docker](https://images.unsplash.com/photo-1605745341112-85968b19335b?q=80&w=1200)
-
-</div>
-
----
 
 # 🧠 Objetivos del proyecto
 
@@ -521,15 +504,16 @@ git push origin feature/nueva-funcionalidad
 
 ---
 
-# 👨‍💻 Desarrolladores
+# 👨‍💻 Desarrollador
 
 <div align="center">
 
-## We All Code Community
+## Isai Reyes - Full Stack
 
-Plataforma desarrollada por la comunidad We All Code para la gestión educativa y tecnológica 🚀
+Desarrollador open source enfocado en plataformas modernas para gestión de eventos y conferencias 🌍
 
 </div>
+
 
 ---
 
